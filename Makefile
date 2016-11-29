@@ -27,11 +27,8 @@ dir:
 
 .PHONY: build
 build: dir
-	cd build/${BUILD_TYPE} 
-	#&& 
-	#cmake ${CMAKE_OPTIONS} ../..
-	#env|grep PATH
-	'/cygdrive/c/Program Files (x86)/CMake/bin/cmake.exe' ${CMAKE_OPTIONS} C:/projects/qfs
+	cd build/${BUILD_TYPE} && '/cygdrive/c/Program Files (x86)/CMake/bin/cmake.exe' ${CMAKE_OPTIONS} C:/projects/qfs
+	#cmake ${CMAKE_OPTIONS} ../..	
 	cd build/${BUILD_TYPE} && $(MAKE) ${MAKE_OPTIONS} install
 
 .PHONY: java
