@@ -21,4 +21,5 @@ install:
     - '%CYG_BASH% -lc "cygcheck -dc cygwin"'
 
 build_script:
+    - where cmake
     - '%CYG_BASH% -lc "cd $APPVEYOR_BUILD_FOLDER && make gtest tarball"'
