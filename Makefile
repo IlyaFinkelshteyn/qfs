@@ -30,6 +30,7 @@ build: dir
 	cd build/${BUILD_TYPE} 
 	#&& 
 	#cmake ${CMAKE_OPTIONS} ../..
+	env|grep PATH
 	cmake.exe
 	cd build/${BUILD_TYPE} && $(MAKE) ${MAKE_OPTIONS} install
 
