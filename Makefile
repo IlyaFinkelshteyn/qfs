@@ -30,6 +30,7 @@ build: dir
 	cd build/${BUILD_TYPE} 
 	#&& 
 	#cmake ${CMAKE_OPTIONS} ../..
+	cmake ../..
 	cd build/${BUILD_TYPE} && $(MAKE) ${MAKE_OPTIONS} install
 
 .PHONY: java
