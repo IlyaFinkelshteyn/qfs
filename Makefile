@@ -27,7 +27,9 @@ dir:
 
 .PHONY: build
 build: dir
-	cd build/${BUILD_TYPE} && cmake ${CMAKE_OPTIONS} ../..
+	cd build/${BUILD_TYPE} 
+	#&& 
+	cmake ${CMAKE_OPTIONS} ../..
 	cd build/${BUILD_TYPE} && $(MAKE) ${MAKE_OPTIONS} install
 
 .PHONY: java
