@@ -30,8 +30,8 @@ build: dir
 	cd build/${BUILD_TYPE} 
 	#&& 
 	#cmake ${CMAKE_OPTIONS} ../..
-	env|grep PATH
-	/cygdrive/c/Program Files (x86)/CMake/bin/cmake.exe
+	#env|grep PATH
+	/cygdrive/c/Program Files (x86)/CMake/bin/cmake.exe ${CMAKE_OPTIONS} ../..
 	cd build/${BUILD_TYPE} && $(MAKE) ${MAKE_OPTIONS} install
 
 .PHONY: java
